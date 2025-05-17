@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Zyrix</title>
+        <style>
+            body{
+                background-image: url(img/bg.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: poppins;
+            }
+            .all{
+                backdrop-filter: blur(7px);
+                height: 80%;
+                width: 30%;
+                border-radius: 16px;
+                box-shadow: 0px 0px 1px white;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                translate: -50% -50%;
+                text-align: center;
+                padding-top: 3%;
+            }
+            h1{
+                color: white;
+                transition: 0.5s;
+            }
+            h1:hover{
+                color: blueviolet;
+            }
+            .name{
+                float: left;
+                color: white;
+                font-size: 10px;
+                margin-left: 7%;
+            }
+            .pass{
+                float: left;
+                color: white;
+                font-size: 10px;
+                margin-left: 7%;
+            }
+            #val{
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                font-size: 12px;
+                padding: 4%;
+                width: 87%;
+                color: white;
+                transition: 0.5s ease;
+            }
+            #val:hover{
+                border-bottom: 1px solid blueviolet;
+            }
+            .pswd{
+                color: white;
+                font-size: 9px;
+                float: right;
+                margin-right: 7%;
+                margin-top: 5px;
+            }
+            .btn{
+                width: 87%;
+                height: 7%;
+                border-radius: 100px;
+                border: none;
+                transition: 0.5s ease-in-out;
+            }
+            .btn:hover{
+                background: blueviolet;
+                color: white;
+                border: none;
+            }
+            .or{
+                color: white;
+                font-size: 10px;
+                float: center;
+                margin-top: 5px;  
+            }
+            .fb{
+                filter: invert(100%) sepia(11%) saturate(7475%) hue-rotate(237deg) brightness(118%) contrast(92%);
+                transition: 00.5s;
+            }
+            .fb:hover{
+                filter: invert(26%) sepia(76%) saturate(6482%) hue-rotate(267deg) brightness(92%) contrast(93%);
+            }
+            .tw{
+                filter: invert(100%) sepia(11%) saturate(7475%) hue-rotate(237deg) brightness(118%) contrast(92%);
+                transition: 00.5s;
+            }
+            .tw:hover{
+                filter: invert(26%) sepia(76%) saturate(6482%) hue-rotate(267deg) brightness(92%) contrast(93%);
+            }
+            .gg{
+                filter: invert(100%) sepia(11%) saturate(7475%) hue-rotate(237deg) brightness(118%) contrast(92%);
+                transition: 00.5s;
+            }
+            .gg:hover{
+                filter: invert(26%) sepia(76%) saturate(6482%) hue-rotate(267deg) brightness(92%) contrast(93%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="all">
+            <form>
+            <h1>Login</h1>
+            <label class="name">Username</label> <br>
+            <input type="text" name="name" id="val" placeholder="Type your username" required><br><br><br>
+            <label class="pass">Password</label><br>
+            <input type="password" name="pass" id="val" placeholder="Type your password" required><br>
+            <label class="pswd">Forget password?</label><br><br>
+            <input type="submit" class="btn"><br><br><br>
+            <label class="or">Or Sign Up Using</label><br><br>
+            <div class="icn">
+                <img src="img/fb.png" width="30px" class="fb">
+                <img src="img/twtr.png" width="30px" class="tw">
+                <img src="img/ggl.png" width="30px" class="gg">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
